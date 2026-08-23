@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Mohanraj
+# 👋 Hi, I'm Mohan
 
 I build small, sharp developer tools for AI workflows — DeepSeek cost control, Claude Code plugins, and observability.
 
