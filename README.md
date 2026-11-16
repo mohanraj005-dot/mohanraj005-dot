@@ -1,31 +1,31 @@
-# 👋 Hi, I'm Mohan
+# Mohan Raj Dhanapal
 
-I build small, sharp developer tools for AI workflows — DeepSeek cost control, Claude Code plugins, and observability.
+**AI Engineer & Architect: LLM agents, RAG, evaluation, and the guardrails that make them safe to run in production.**
 
-## ⭐ Featured
+I've spent 21 years in software delivery, platforms and operations. These days I build with coding agents every day, and I care most about the unglamorous parts that decide whether an AI system can be trusted: evaluation gates, human approval, tracing, and tests that ship with every change.
 
-### [📊 dsh-cost-banner](https://github.com/mohanraj005-dot/dsh-cost-banner)
-> **Live DeepSeek API cost + peak/off-peak countdown banner** for the DeepSeek Harness web UI. Know what a session costs in real time, and exactly when peak pricing kicks in.
+Most recently (2024–2026) I built a RAG system on AWS Bedrock and LangChain, a support agent that writes the fix and raises a pull request for a developer to review, and LangGraph multi-agent workflows traced and evaluated in Langfuse. That employer code is private. Everything below is my own work, published under Apache-2.0.
 
-`deepseek` · `api-cost` · `finops` · `npm` &nbsp;— ★ it if it saves you money.
+## Featured
 
-### [🧩 clauderig](https://github.com/mohanraj005-dot/clauderig)
-> **Five Claude Code plugins:** promptcarta (model-aware prompt generator + critic), context-till (token/context waste auditor), entity-naming (naming + live domain clearance), sketcher (dimensions → to-scale SVG floor plans), risk-critic (adversarial review pair).
+| Repo | What it shows |
+|---|---|
+| [approval-gated-mcp](https://github.com/mohanraj005-dot/approval-gated-mcp) | An MCP server where an agent can draft outbound messages but only send after a human approves the exact draft by fingerprint. Kill switch, rate limit, audit log. |
+| [rag-eval-harness](https://github.com/mohanraj005-dot/rag-eval-harness) | Retrieval-augmented QA with citations, a golden-set evaluation (hit@k, MRR, citation and fact coverage) and a CI regression gate. Runs offline, no API key needed. |
+| [clauderig](https://github.com/mohanraj005-dot/clauderig) | Five Claude Code plugins I use daily: a model-aware prompt writer and critic, a context-waste auditor, naming with live domain checks, a to-scale floor-plan sketcher, and an adversarial review pair. |
+| [atlas-dashboard](https://github.com/mohanraj005-dot/atlas-dashboard) | A cross-project status dashboard on Cloudflare Workers and D1, fed by a local collector. |
 
-`claude` · `skills` · `plugins`
+## How I build AI systems
 
----
+- **Agents draft, people approve.** Anything that leaves the system (an email, a merge, a deploy) passes a human gate tied to the exact content.
+- **Evaluation before release.** A golden set and a regression gate decide whether a prompt, model or retriever change ships.
+- **Tests ship with the build.** Unit and end-to-end tests are written alongside the feature, not after it.
+- **Trace everything.** Every query and tool call leaves a record you can replay when something goes wrong.
 
-## About Me
+## Stack
 
-- **Focus:** cost/observability for LLM APIs, and productivity tooling that ships.
-- **Currently building:** the "finops for DeepSeek tokens" stack.
+Python · LangGraph · LangChain · RAG and vector search · AWS Bedrock · Anthropic and OpenAI models · Claude Code, MCP, skills and hooks · Langfuse · AWS and Azure · Kubernetes · Docker · Airflow · Snowflake · GitHub Actions
 
-## Let's connect
+## Contact
 
-- 🐙 [mohanraj005-dot](https://github.com/mohanraj005-dot) — everything above
-- 💬 Open to issues, PRs, and feedback on either repo.
-
-<!--
-  If one of these saved you time or money, a star is the cheapest thanks there is. ⭐
--->
+[LinkedIn](https://www.linkedin.com/in/mohan-technical-leadership) · open to remote AI engineering work
